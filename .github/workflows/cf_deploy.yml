@@ -20,6 +20,10 @@ jobs:
 
       - name: Install Wrangler
         run: npm install -g wrangler
+        
+      - name: List build output
+        run: ls -R .
+ 
 
       - name: Deploy to Cloudflare Pages
         env:
